@@ -1,0 +1,62 @@
+{
+  "name": "electrum-client-browser",
+  "version": "1.2.0",
+  "description": "Electrum protocol client for node.js and browser",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "build": "npm run build:types && npm run build:esm",
+    "build:esm": "node scripts/build-esm.js",
+    "build:types": "tsc --declaration --emitDeclarationOnly --allowJs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "websocket": "^1.0.29"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "electrum-host-parse": "^0.1.1",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "fs": "0.0.1-security",
+    "typescript": "^4.9.5"
+  },
+  "homepage": "https://github.com/keep-network/electrum-client-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/keep-network/electrum-client-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keep-network/electrum-client-js/issues"
+  },
+  "keywords": [
+    "client",
+    "electrum",
+    "bitcoin",
+    "cryptocurrency",
+    "electrumx"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Narek Petrosyan",
+  "license": "MIT"
+}
