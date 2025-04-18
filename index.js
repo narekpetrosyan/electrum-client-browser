@@ -1,6 +1,6 @@
-"use strict";
+'use strict'
 
-const ElectrumClient = require("./src/electrum/client");
+const ElectrumClient = require('./src/electrum/client')
 
 // Export the ElectrumClient class
-module.exports = ElectrumClient;
+module.exports = ElectrumClient
