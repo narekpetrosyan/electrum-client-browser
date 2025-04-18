@@ -12,7 +12,7 @@ declare class SocketClient {
     mp: util.MessageParser;
     client: WebSocketClient;
     connect(): Promise<any>;
-    close(): void;
+    close(cb?: null): void;
     response(msg: any): void;
     onMessage(body: any, n: any): void;
     onConnect(): void;

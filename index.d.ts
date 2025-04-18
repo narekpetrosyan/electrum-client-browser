@@ -13,7 +13,7 @@ declare class ElectrumClient {
   ): Promise<void>;
   request(method: string, params: any[]): Promise<any>;
   keepAlive(): Promise<void>;
-  close(): void;
+  close(cb?: () => void): void;
 
   // Server methods
   server_version(

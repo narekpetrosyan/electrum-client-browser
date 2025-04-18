@@ -18,6 +18,7 @@ declare class ElectrumClient extends SocketClient {
      */
     keepAlive(): Promise<void>;
     keepAliveHandle: number | undefined;
+    close(): void;
     onClose(): void;
     server_version(client_name: any, protocol_version: any): Promise<any>;
     server_banner(): Promise<any>;

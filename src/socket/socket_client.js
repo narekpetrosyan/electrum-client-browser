@@ -36,14 +36,16 @@ class SocketClient {
     return this.client.connect()
   }
 
-  close(cb = null) {
-    cb(this.status)
+  close(cb = undefined) {
+    if (cb) {
+      cb(this.status)
+    }
     if (this.status === 0) {
       return
     }
 
+    this.client.close()
     this.status = 0
-    cb(this.status)
   }
 
   response(msg) {
