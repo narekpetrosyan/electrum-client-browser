@@ -1,6 +1,6 @@
 {
   "name": "electrum-client-browser",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Electrum protocol client for node.js and browser",
   "main": "index.js",
   "module": "index.mjs",
