@@ -39,13 +39,13 @@
     "fs": "0.0.1-security",
     "typescript": "^4.9.5"
   },
-  "homepage": "https://github.com/electrum-client-browser#readme",
+  "homepage": "https://github.com/narekpetrosyan/electrum-client-browser#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/electrum-client-browser.git"
+    "url": "git://github.com/narekpetrosyan/electrum-client-browser.git"
   },
   "bugs": {
-    "url": "https://github.com/electrum-client-browser/issues"
+    "url": "https://github.com/narekpetrosyan/electrum-client-browser/issues"
   },
   "keywords": [
     "client",
